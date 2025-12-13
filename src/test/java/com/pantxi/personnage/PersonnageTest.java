@@ -6,9 +6,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PersonnageTest {
 
     @Test
-    void Orientation_EST() {
+    void Orientation_SUD() {
         Personnage monPersonnage = new Personnage();
-        Orientation or = monPersonnage.tourner(1);
-        assertThat(or).isEqualTo(Orientation.EST);
+        Orientation or = monPersonnage.tourner(2);
+        assertThat(or).isEqualTo(Orientation.SUD);
     }
 }
