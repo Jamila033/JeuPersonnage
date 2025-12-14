@@ -8,8 +8,8 @@ public class PersonnageTest {
     @Test
     void Orientation_NORD_Zero_Tour() {
         Personnage monPersonnage = new Personnage();
-        Orientation or = monPersonnage.tourner(0);
-        assertThat(or).isEqualTo(Orientation.NORD);
+        Orientation orient = monPersonnage.tourner(0);
+        assertThat(orient).isEqualTo(Orientation.NORD);
     }
 
     @Test

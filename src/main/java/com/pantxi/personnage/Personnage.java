@@ -5,12 +5,12 @@ public class Personnage {
     private Orientation orientation = Orientation.NORD;
 
     public Orientation tourner(int tours) {
-        Orientation[] directions = Orientation.values();
+        Orientation[] direct = Orientation.values();
         int indexActuel = this.orientation.ordinal();
 
-        int nouvelIndex = (indexActuel + tours) % directions.length;
+        int nouvelIndex = (indexActuel + tours) % direct.length;
 
-        this.orientation = directions[nouvelIndex];
+        this.orientation = direct[nouvelIndex];
         return this.orientation;
     }
 }
